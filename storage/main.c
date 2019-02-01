@@ -82,9 +82,10 @@ int main(int argc, char** argv) {
     while(count--) {
         static_storage_class(); 
     }
+    
     // demonstrate extern Storage Class 
     count2 = 5;
-    //extern_storage_class();
+    extern_storage_class();
 
     return (EXIT_SUCCESS);
 }

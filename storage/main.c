@@ -24,7 +24,7 @@
 // static global variable
 static int count = 5;
 
-// global variable having its declaration in helper.c
+
 int count2; 
 
 // external function having its definition in helper.c
@@ -50,7 +50,7 @@ void register_storage_class()
   
     printf("\nDemonstrating register class\n\n"); 
    
-    register char b = 'G'; 
+    register char b = 75; 
   
     // printing the register variable 'b' 
     printf("Value of the variable 'b' declared as register: %c\n",b); 
@@ -86,7 +86,7 @@ int main(int argc, char** argv) {
     
     // demonstrate extern Storage Class 
     count2 = 5;
-    //extern_storage_class();
+    extern_storage_class();
 
     return (EXIT_SUCCESS);
 }

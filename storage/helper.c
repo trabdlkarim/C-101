@@ -5,7 +5,8 @@
  */
 
 #include <stdio.h>
- 
+
+// global variable having its declaration in main.c
 extern int count2;
  
 void extern_static_class(void) {

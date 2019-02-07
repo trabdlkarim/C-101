@@ -22,7 +22,7 @@
  */
 
 // static global variable
-static int count;
+static int count = 5;
 
 // global variable having its declaration in helper.c
 int count2; 
@@ -41,7 +41,7 @@ void auto_storage_class()
    
     printf("Value of the variable 'a' declared as auto: %d\n",a); 
   
-    printf("--------------------------------"); 
+    printf("--------------------------------\n\n"); 
 }
 
 
@@ -55,7 +55,7 @@ void register_storage_class()
     // printing the register variable 'b' 
     printf("Value of the variable 'b' declared as register: %c\n",b); 
  
-    printf("--------------------------------"); 
+    printf("--------------------------------\n\n"); 
 }
 
 
@@ -65,7 +65,7 @@ void static_storage_class()
    static int i = 5; 
    i++;
 
-   printf("i is %d and count is %d\n", i, count);
+   printf("While i = %d, count =  %d\n", i, count);
 } 
  
   
@@ -78,14 +78,15 @@ int main(int argc, char** argv) {
     // demonstrate register Storage Class 
     register_storage_class(); 
   
-    // demonstrate static Storage Class 
+    // demonstrate static Storage Class
+    printf("\nDemonstrating static class\n\n"); 
     while(count--) {
         static_storage_class(); 
     }
     
     // demonstrate extern Storage Class 
     count2 = 5;
-    extern_storage_class();
+    //extern_storage_class();
 
     return (EXIT_SUCCESS);
 }

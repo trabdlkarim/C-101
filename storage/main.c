@@ -28,7 +28,7 @@ static int count = 5;
 int count2; 
 
 // external function having its definition in helper.c
-extern void extern_storage_class();
+extern void extern_storage_class(void);
 
 
 void auto_storage_class() 
@@ -41,7 +41,7 @@ void auto_storage_class()
    
     printf("Value of the variable 'a' declared as auto: %d\n",a); 
   
-    printf("--------------------------------\n\n"); 
+    printf("----------------------------------------------\n\n"); 
 }
 
 
@@ -55,7 +55,7 @@ void register_storage_class()
     // printing the register variable 'b' 
     printf("Value of the variable 'b' declared as register: %c\n",b); 
  
-    printf("--------------------------------\n\n"); 
+    printf("--------------------------------------------------\n\n"); 
 }
 
 
@@ -83,6 +83,7 @@ int main(int argc, char** argv) {
     while(count--) {
         static_storage_class(); 
     }
+    printf("--------------------------\n\n"); 
     
     // demonstrate extern Storage Class 
     count2 = 5;

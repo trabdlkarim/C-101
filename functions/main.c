@@ -12,8 +12,10 @@
  * 
  */
 int main(int argc, char** argv) {
-    
-    roll_six_sided_dice(20);
+    int n;
+    printf("How many times do you want to roll the dice? ");
+    scanf("%d",&n);
+    roll_six_sided_dice(n);
     
     return (EXIT_SUCCESS);
 }

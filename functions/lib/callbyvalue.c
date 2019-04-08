@@ -6,7 +6,7 @@
 
 #include <stdio.h>
 #include <stdlib.h>
-
+#include <time.h>
 /**
  * 
  */
@@ -17,19 +17,49 @@ int generate_rand_num(int limit){
 
 void roll_six_sided_dice(int n){
     
-    int counter;
+    int counter, face; 
+    int freq1 = 0, freq2 = 0, freq3 = 0,freq4 = 0, freq5 = 0, freq6 = 0;
+    
     
     // seed random number generator
     srand(time(NULL));
     
     // loop n times
     for(counter=1; counter <= n; counter++){
-        
+        face = generate_rand_num(6);
+        switch(face){
+            case 1:
+                freq1++;
+                break;
+            case 2:
+                freq2++;
+                break;
+            case 3:
+                freq3++;
+                break;
+            case 4:
+                freq4++;
+                break;
+            case 5:
+                freq5++;
+                break;
+            case 6:
+                freq6++;
+                break;
+        }
         // pick random number from 1 to 6 and output it 
-        printf("%10d", generate_rand_num(6));
+        printf("%10d", face);
         
         // if counter is divisible by 5, begin new line of output 
         if (counter % 5 == 0) printf("\n");
     }
+    // display results in tabular format
+    printf("\n%13s  %13s\n","Face:","Frequency:" );
+    printf("%10d %10d\n", 1, freq1);
+    printf("%10d %10d\n", 2, freq2);
+    printf("%10d %10d\n", 3, freq3);
+    printf("%10d %10d\n", 4, freq4);
+    printf("%10d %10d\n", 5, freq5);
+    printf("%10d %10d\n", 6, freq6);
 
 }

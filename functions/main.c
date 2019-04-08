@@ -15,9 +15,8 @@
  */
 int main(int argc, char** argv) {
     int n;
-    printf("How many times do you want to roll the dice? ");
-    scanf("%d",&n);
-    roll_six_sided_dice(n);
+    
+    roll_six_sided_dice(50);
     
     printf("\n-----------------------Craps game party-------------------\n");
     craps_dice_game();

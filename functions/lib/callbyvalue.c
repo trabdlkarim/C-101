@@ -72,6 +72,6 @@ int factorial_loop(int n){
 }
 
 int factorial_rec(int n){
-    if (n <2) return 1;
-    else return factorial_rec(n-1) + factorial_rec(n-2);
+    if (n < 1) return 1;
+    else return n*factorial_rec(n-1);
 }

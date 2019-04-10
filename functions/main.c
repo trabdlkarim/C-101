@@ -19,7 +19,7 @@ int main(int argc, char** argv) {
     
     //printf("\n-----------------------Craps game party-------------------\n");
     //craps_dice_game();
-    printf("facotorial 5: %d",factorial_loop(5));
+    printf("facotorial 5: %d",factorial_rec(5));
     
     return (EXIT_SUCCESS);
 }

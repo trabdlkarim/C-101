@@ -75,3 +75,12 @@ int factorial_rec(int n){
     if (n < 1) return 1;
     else return n*factorial_rec(n-1);
 }
+
+int helper_tail(int n, int total){
+    if (n<1)return total;
+    else return helper_tail(n-1, total*=n);
+}
+
+int factorial_tail(int n){
+     return helper_tail(n,1);
+}

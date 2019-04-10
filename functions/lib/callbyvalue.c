@@ -63,3 +63,15 @@ void roll_six_sided_dice(int n){
     printf("%10d %10d\n", 6, freq6);
 
 }
+
+int factorial_loop(int n){
+    
+    int total = 1;
+    for(int i =1;i<=n;i++)total *= i;
+    return total;
+}
+
+int factorial_rec(int n){
+    if (n <2) return 1;
+    else return factorial_rec(n-1) + factorial_rec(n-2);
+}

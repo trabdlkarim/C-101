@@ -13,7 +13,7 @@ extern "C" {
 
 void roll_six_sided_dice(int n);
 int generate_rand_num(int limit);
-
+int factorial_loop(int n);
 #ifdef __cplusplus
 }
 #endif

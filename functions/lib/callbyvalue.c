@@ -64,23 +64,32 @@ void roll_six_sided_dice(int n){
 
 }
 
-int factorial_loop(int n){
+long factorial_loop(long n){
     
-    int total = 1;
+    long total = 1;
     for(int i =1;i<=n;i++)total *= i;
     return total;
 }
 
-int factorial_rec(int n){
+long factorial_rec(long n){
     if (n < 1) return 1;
     else return n*factorial_rec(n-1);
 }
 
-int helper_tail(int n, int total){
+long helper_tail(long n, long total){
     if (n<1)return total;
     else return helper_tail(n-1, total*=n);
 }
 
-int factorial_tail(int n){
+long factorial_tail(long n){
      return helper_tail(n,1);
 }
+
+// Recursive definition of function fibonacci 
+long fibonacci( long n ){
+    // base case 
+    if ( n == 0 || n == 1 ) return n;
+    // recursive step 
+    else return fibonacci( n - 1 ) + fibonacci( n - 2 );
+    
+} 

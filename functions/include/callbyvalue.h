@@ -14,9 +14,11 @@ extern "C" {
 void roll_six_sided_dice(int n);
 int generate_rand_num(int limit);
 
-int factorial_loop(int n);
-int factorial_rec(int n);
-int factorial_tail(int n);
+long factorial_loop(long n);
+long factorial_rec(long n);
+long factorial_tail(long n);
+
+long fibonacci( long n );
 
 #ifdef __cplusplus
 }

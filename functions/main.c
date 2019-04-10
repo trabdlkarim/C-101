@@ -18,12 +18,13 @@ int main(int argc, char** argv) {
     int n;
     
     //roll_six_sided_dice(50);
-    //printf("\n-----------------------Craps game party-------------------\n");
+    //printf("\nCraps game party:\n");
     //craps_dice_game();
     
-    printf("facotorial (loop) of 5: %d\n",factorial_loop(5));
-    printf("facotorial (recursion) of 5: %d\n",factorial_rec(5));
-    printf("facotorial (tail) of 5: %d\n",factorial_tail(5));
+    printf("facotorial (loop) of 5: %ld\n",factorial_loop(20));
+    printf("facotorial (recursion) of 5: %ld\n",factorial_rec(20));
+    printf("facotorial (tail) of 5: %ld\n",factorial_tail(20));
+    
     return (EXIT_SUCCESS);
 }
 

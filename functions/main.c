@@ -7,7 +7,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-#include "include/callbyvalue.h"
+#include "include/myfunctions.h"
 #include "include/game.h"
 
 /*

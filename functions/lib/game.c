@@ -4,7 +4,7 @@
 #include <time.h>
 
 #include "../include/game.h"
-#include "../include/callbyvalue.h"
+#include "../include/myfunctions.h"
 
 int roll_two_dices(void){
     

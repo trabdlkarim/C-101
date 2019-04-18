@@ -2,4 +2,6 @@ build/
 dist/
 nbproject/
 
+Makefile
+makefile
 .dep.inc
